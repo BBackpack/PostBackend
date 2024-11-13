@@ -3,14 +3,13 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  
   "scripts": {
     "dev": "node backend/index.cjs",
     "start": "node backend/index.cjs",
     "lint": "eslint ."
   },
   "engines": {
-  "node": "20.17.0"
+    "node": "20.17.0"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.6.0",
@@ -20,6 +19,7 @@
     "@hookform/resolvers": "^3.9.0",
     "axios": "^1.7.7",
     "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
     "express": "^4.21.1",
     "express-session": "^1.18.1",
     "mssql": "^11.0.1",
