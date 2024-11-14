@@ -1,4 +1,5 @@
-//Connecting to DB
+// ------------ASHLEY-------------------------------------------------
+// Connecting to DB
 const sql = require('mssql');
 const config = {
     user: 'ashley',
