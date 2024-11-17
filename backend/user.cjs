@@ -318,7 +318,7 @@ router.post('/business-profile-update', async (req, res) => {
                 WHERE UID = @userID;
             `);
 
-        const nameID = nameResult.recordset[0].name;
+        const nameID = nameResult.recordset[0].ownerName;
 
         const addressResult = await pool.request()
             .input('userID', sql.Int, userID)
@@ -328,7 +328,7 @@ router.post('/business-profile-update', async (req, res) => {
                 WHERE UID = @userID;
             `);
 
-        const addressID = addressResult.recordset[0].address;
+        const addressID = addressResult.recordset[0].warehouseAddress;
 
         await pool.request()
             .input('firstName', sql.VarChar, firstName)
